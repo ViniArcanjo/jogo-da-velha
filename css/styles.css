@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font: 400 1rem 'Times New Roman', sans-serif;
+    color: white;
+
+    background-color: rgb(19, 12, 2);
+}
+
+/* Descritivo */
+header {
+    padding: 2rem;
+}
+
+header h1 {
+    font: bolder 2rem 'Times New Roman', sans-serif;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer span {
+    font: bolder 1.3rem 'Times New Roman', sans-serif;
+}
+
+/* Jogo da Velha */
+.hide {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+main #jogador {
+    margin: 0 0.5rem;
+    font: bolder 2rem 'Times New Roman', sans-serif;
+}
+
+main .jogo{
+    display: flex;
+}
+
+.coluna1, .coluna2, .coluna3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 7rem;
+    height: 7rem;
+
+    cursor: pointer;
+}
+
+.linha.disabled {
+    pointer-events: none;
+}
+
+.linha:hover {
+    background-color: rgb(172, 172, 171);
+    transition: background-color 0.3s;
+}
+
+.linha img {
+    max-width: 5rem;
+    height: 5rem;
+
+    filter: invert(100%) brightness(100);
+}
+
+div[data-i="1"] {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    
+}
+div[data-i="2"] {
+    border-right: 2px solid white;
+}
+div[data-i="3"] {
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+}
+div[data-i="4"] {
+    border-bottom: 2px solid white;
+}
+div[data-i="6"] {
+    border-top: 2px solid white;
+}
+div[data-i="7"] {
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+div[data-i="8"] {
+    border-left: 2px solid white;
+}
+div[data-i="9"] {
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+
+main #start {
+    padding: 1rem 1.5rem;
+
+    font: bolder 1rem 'Times New Roman', sans-serif;
+    color: rgb(19, 12, 2);
+
+    background-color: white;
+    border: none;
+    border-radius: 3rem;
+
+    cursor: pointer;
+}
+
+main #start:hover {
+    padding: 1rem 1.5rem;
+
+    font: bolder 1rem 'Times New Roman', sans-serif;
+    color: rgb(19, 12, 2);
+
+    background-color: rgb(137, 239, 100);
+    border: none;
+    border-radius: 3rem;
+
+    transition: background-color 0.3s;
+}

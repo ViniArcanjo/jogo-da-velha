@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <header><h1>Jogo da Velha</h1></header>
+    <main>
+       <p id="vez" class="hide">
+        ESTÁ NA VEZ DO JOGADOR <span id="jogador"></span> JOGAR
+      </p>
+      <div class="jogo">
+        <div id="coluna1" class="coluna1">
+          <div data-i="1" class="linha disabled"></div>
+          <div data-i="2" class="linha disabled"></div>
+          <div data-i="3" class="linha disabled"></div>
+        </div>
+        <div id="coluna2" class="coluna2">
+          <div data-i="4" class="linha disabled"></div>
+          <div data-i="5" class="linha disabled"></div>
+          <div data-i="6" class="linha disabled"></div>
+        </div>
+        <div id="coluna3" class="coluna3">
+          <div data-i="7" class="linha disabled"></div>
+          <div data-i="8" class="linha disabled"></div>
+          <div data-i="9" class="linha disabled"></div>
+        </div>
+      </div>
+      <div id="alert" class="hide"></div>
+      <button id="start">COMEÇAR O JOGO</button>
+    </main>
+    <footer>const footer = if ( código bom ) ( "feito por <span>Vincius Arcanjo</span>" )</footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
